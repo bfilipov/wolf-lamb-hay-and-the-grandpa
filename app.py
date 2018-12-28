@@ -1,9 +1,9 @@
 import os
-from Game import Game
+from game.Game import Game
 
 
 g = Game()
-while not g.game_over:
+while True:
     os.system('cls')
     g.print_state()
     g.check_state()
@@ -22,5 +22,5 @@ while not g.game_over:
             else:
                 print('Моля проверете въведената стойност')
         g.move(user_input)
-
-
+    else:
+        break

@@ -1,4 +1,4 @@
-from Sprite import Sprite
+from sprite.Sprite import Sprite
 
 class Game:
     def __init__(self):
